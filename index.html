@@ -86,17 +86,14 @@
             </div>
             <div class="">
               <p class="text-base text-neutral-slate-500">Mortgage Type</p>
-              <div class="mt-2 grid grid-cols-1 grid-rows-2 items-center gap-2">
-                <div
-                  id="repaymentDiv"
-                  class="flex items-center rounded-sm border border-neutral-slate-500 px-4 py-2"
-                >
+              <div class="mt-2">
+                <div id="repaymentDiv" class="radio-group">
                   <input
                     type="radio"
                     name="mortgage-type"
                     id="repayment"
                     value="repayment"
-                    class="mr-4 h-4 w-4 rounded-sm text-neutral-slate-700"
+                    class="hidden"
                   />
                   <label
                     for="repayment"
@@ -104,16 +101,13 @@
                     >Repayment</label
                   >
                 </div>
-                <div
-                  id="interestDiv"
-                  class="flex items-center rounded-sm border border-neutral-slate-500 px-4 py-2"
-                >
+                <div id="interestDiv" class="radio-group">
                   <input
                     type="radio"
                     name="mortgage-type"
                     id="interest"
                     value="interest"
-                    class="mr-4 h-4 w-4 rounded-sm text-neutral-slate-700"
+                    class="hidden"
                   />
                   <label
                     for="interest"
