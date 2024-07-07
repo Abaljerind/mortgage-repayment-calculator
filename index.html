@@ -17,23 +17,121 @@
     <link rel="stylesheet" href="./src/css/output.css" />
   </head>
   <body>
-    Mortgage Calculator Clear All Mortgage Amount Mortgage Term Interest Rate
-    Mortgage Type Repayment Interest Only Calculate Repayments
+    <section class="container grid grid-cols-1 p-4 font-jakarta-sans">
+      <!-- bagian atas / kiri -->
+      <main class="">
+        <div class="">
+          <h1 class="text-xl font-bold text-neutral-slate-900">
+            Mortgage Calculator
+          </h1>
+          <button
+            type="button"
+            class="mt-2 bg-transparent text-neutral-slate-500 underline underline-offset-2"
+          >
+            Clear All
+          </button>
+        </div>
+        <div class="mt-6">
+          <form class="w-full" id="form-calculator">
+            <div class="mb-4">
+              <label for="amount" class="text-base text-neutral-slate-500"
+                >Mortgage Amount</label
+              >
+              <div class="mt-2 flex items-center">
+                <span
+                  class="rounded-l-sm border border-r-0 border-neutral-slate-500 bg-neutral-slate-100 px-4 py-[7.25px] font-bold text-neutral-slate-500"
+                  >&#163;</span
+                >
+                <input
+                  type="text"
+                  name="amount"
+                  id="amount"
+                  class="h-10 w-11/12 flex-1 rounded-sm rounded-l-none border border-l-0 border-neutral-slate-500 px-3 py-2 focus:outline-none"
+                />
+              </div>
+            </div>
+            <div class="mb-4">
+              <label for="term" class="text-base text-neutral-slate-500"
+                >Mortgage Term</label
+              >
+              <div class="mt-2 flex items-center">
+                <input
+                  type="text"
+                  name="term"
+                  id="term"
+                  class="h-10 w-11/12 flex-1 rounded-sm rounded-r-none border border-r-0 border-neutral-slate-500 px-3 py-2 focus:outline-none"
+                />
+                <span
+                  class="rounded-r-sm border border-l-0 border-neutral-slate-500 bg-neutral-slate-100 px-4 py-[7.25px] font-bold text-neutral-slate-500"
+                  >years</span
+                >
+              </div>
+            </div>
+            <div class="mb-4">
+              <label for="rate" class="text-base text-neutral-slate-500"
+                >Interest Rate</label
+              >
+              <div class="mt-2 flex items-center">
+                <input
+                  type="text"
+                  name="rate"
+                  id="rate"
+                  class="h-10 w-11/12 flex-1 rounded-sm rounded-r-none border border-r-0 border-neutral-slate-500 px-3 py-2 focus:outline-none"
+                />
+                <span
+                  class="rounded-r-sm border border-l-0 border-neutral-slate-500 bg-neutral-slate-100 px-4 py-[7.25px] font-bold text-neutral-slate-500"
+                  >%</span
+                >
+              </div>
+            </div>
+            <div class="">
+              <p class="text-base text-neutral-slate-500">Mortgage Type</p>
+              <div class="mt-2 grid grid-cols-1 grid-rows-2 items-center gap-2">
+                <div
+                  id="repaymentDiv"
+                  class="flex items-center rounded-sm border border-neutral-slate-500 px-4 py-2"
+                >
+                  <input
+                    type="radio"
+                    name="mortgage-type"
+                    id="repayment"
+                    value="repayment"
+                    class="mr-4 h-4 w-4 rounded-sm text-neutral-slate-700"
+                  />
+                  <label
+                    for="repayment"
+                    class="text-base font-bold text-neutral-slate-900"
+                    >Repayment</label
+                  >
+                </div>
+                <div
+                  id="interestDiv"
+                  class="flex items-center rounded-sm border border-neutral-slate-500 px-4 py-2"
+                >
+                  <input
+                    type="radio"
+                    name="mortgage-type"
+                    id="interest"
+                    value="interest"
+                    class="mr-4 h-4 w-4 rounded-sm text-neutral-slate-700"
+                  />
+                  <label
+                    for="interest"
+                    class="text-base font-bold text-neutral-slate-900"
+                    >Interest Only</label
+                  >
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </main>
+      <!-- akhir bagian atas / kiri -->
 
-    <!-- Empty results start -->
-
-    Results shown here Complete the form and click “calculate repayments” to see
-    what your monthly repayments would be.
-
-    <!-- Empty results end -->
-
-    <!-- Completed results start -->
-
-    Your results Your results are shown below based on the information you
-    provided. To adjust the results, edit the form and click “calculate
-    repayments” again. Your monthly repayments Total you'll repay over the term
-
-    <!-- Completed results end -->
+      <!-- bagian bawah / kanan -->
+      <aside class=""></aside>
+      <!-- akhir bagian bawah / kanan -->
+    </section>
 
     <!-- <div class="attribution">
       Challenge by
