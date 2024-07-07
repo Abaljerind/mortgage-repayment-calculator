@@ -40,7 +40,7 @@
     border: 1px solid #4d6e7e;
     border-radius: 3px;
     padding: 8px 15px;
-    padding-left: 45px;
+    padding-left: 55px;
   }
 
   .radio-group input[type="radio"]:checked + label {
@@ -50,7 +50,7 @@
   .radio-group label::before {
     content: "";
     position: absolute;
-    left: 11px;
+    left: 20px;
     top: 50%;
     transform: translateY(-50%);
     height: 20px;
@@ -67,7 +67,7 @@
   .radio-group input[type="radio"]:checked + label::after {
     content: "";
     position: absolute;
-    left: 16px;
+    left: 25px;
     top: 50%;
     transform: translateY(-50%);
     height: 10px;
