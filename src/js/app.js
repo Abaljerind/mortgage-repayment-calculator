@@ -1,3 +1,9 @@
+/* 
+TODO::
+? yang belum dikerjain:
+! 2. mobile, tablet & desktop completed
+*/
+
 document.addEventListener("DOMContentLoaded", function () {
   const clear = document.querySelector("button[type=button]");
   const formCalculator = document.getElementById("form-calculator");
