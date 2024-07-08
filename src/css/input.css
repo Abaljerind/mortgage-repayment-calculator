@@ -76,3 +76,19 @@
     border-radius: 50%;
   }
 }
+
+.invalid-span {
+  @apply border-red bg-red text-white group-hover:border-red;
+}
+
+.valid-span {
+  @apply border-neutral-slate-500 bg-neutral-slate-100 text-neutral-slate-500 group-hover:border-neutral-slate-900;
+}
+
+.valid-input {
+  @apply border-neutral-slate-500 group-hover:border-neutral-slate-900;
+}
+
+.invalid-input {
+  @apply border-red group-hover:border-red;
+}
