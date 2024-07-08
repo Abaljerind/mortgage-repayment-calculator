@@ -43,7 +43,8 @@
               >
               <div class="group mt-2 flex items-center">
                 <span
-                  class="cursor-pointer rounded-l-[3px] border border-r-0 border-neutral-slate-500 bg-neutral-slate-100 px-4 py-[7.25px] font-bold text-neutral-slate-500 group-hover:border-neutral-slate-900"
+                  class="cursor-pointer rounded-l-[3px] border border-r-0 border-neutral-slate-500 bg-neutral-slate-100 px-4 py-[7.2px] font-bold text-neutral-slate-500 group-hover:border-neutral-slate-900"
+                  id="amount-span"
                   >&#163;</span
                 >
                 <input
@@ -53,6 +54,12 @@
                   class="h-10 w-11/12 flex-1 cursor-pointer rounded-[3px] rounded-l-none border border-l-0 border-neutral-slate-500 px-3 py-2 focus:outline-none group-hover:border-neutral-slate-900"
                 />
               </div>
+              <p
+                id="amount-invalid"
+                class="mt-2 hidden text-sm font-semibold text-red"
+              >
+                This field is required
+              </p>
             </div>
             <div class="sm:flex sm:items-center sm:justify-between">
               <div class="mb-4 sm:w-[48%]">
@@ -67,10 +74,17 @@
                     class="h-10 w-11/12 flex-1 cursor-pointer rounded-[3px] rounded-r-none border border-r-0 border-neutral-slate-500 px-3 py-2 focus:outline-none group-hover:border-neutral-slate-900"
                   />
                   <span
-                    class="cursor-pointer rounded-r-[3px] border border-l-0 border-neutral-slate-500 bg-neutral-slate-100 px-4 py-[7.25px] font-bold text-neutral-slate-500 group-hover:border-neutral-slate-900"
+                    class="cursor-pointer rounded-r-[3px] border border-l-0 border-neutral-slate-500 bg-neutral-slate-100 px-4 py-[7.2px] font-bold text-neutral-slate-500 group-hover:border-neutral-slate-900"
+                    id="term-span"
                     >years</span
                   >
                 </div>
+                <p
+                  id="term-invalid"
+                  class="mt-2 hidden text-sm font-semibold text-red"
+                >
+                  This field is required
+                </p>
               </div>
               <div class="mb-4 sm:w-[48%]">
                 <label for="rate" class="text-base text-neutral-slate-500"
@@ -84,10 +98,17 @@
                     class="h-10 w-11/12 flex-1 cursor-pointer rounded-[3px] rounded-r-none border border-r-0 border-neutral-slate-500 px-3 py-2 focus:outline-none group-hover:border-neutral-slate-900"
                   />
                   <span
-                    class="cursor-pointer rounded-r-[3px] border border-l-0 border-neutral-slate-500 bg-neutral-slate-100 px-4 py-[7.25px] font-bold text-neutral-slate-500 group-hover:border-neutral-slate-900"
+                    class="cursor-pointer rounded-r-[3px] border border-l-0 border-neutral-slate-500 bg-neutral-slate-100 px-4 py-[7.2px] font-bold text-neutral-slate-500 group-hover:border-neutral-slate-900"
+                    id="rate-span"
                     >%</span
                   >
                 </div>
+                <p
+                  id="rate-invalid"
+                  class="mt-2 hidden text-sm font-semibold text-red"
+                >
+                  This field is required
+                </p>
               </div>
             </div>
             <div class="mb-6 sm:mb-8 sm:mt-2">
@@ -121,6 +142,12 @@
                     >Interest Only</label
                   >
                 </div>
+                <p
+                  id="type-invalid"
+                  class="mt-2 hidden text-sm font-semibold text-red"
+                >
+                  This field is required
+                </p>
               </div>
             </div>
             <div class="sm:mb-2">
