@@ -30,7 +30,7 @@
           </h1>
           <button
             type="button"
-            class="mt-2 bg-transparent text-neutral-slate-500 underline underline-offset-2"
+            class="mt-2 bg-transparent text-neutral-slate-500 underline underline-offset-2 hover:text-neutral-slate-900"
           >
             Clear All
           </button>
@@ -41,16 +41,16 @@
               <label for="amount" class="text-base text-neutral-slate-500"
                 >Mortgage Amount</label
               >
-              <div class="mt-2 flex items-center">
+              <div class="group mt-2 flex items-center">
                 <span
-                  class="rounded-l-[3px] border border-r-0 border-neutral-slate-500 bg-neutral-slate-100 px-4 py-[7.25px] font-bold text-neutral-slate-500"
+                  class="cursor-pointer rounded-l-[3px] border border-r-0 border-neutral-slate-500 bg-neutral-slate-100 px-4 py-[7.25px] font-bold text-neutral-slate-500 group-hover:border-neutral-slate-900"
                   >&#163;</span
                 >
                 <input
                   type="text"
                   name="amount"
                   id="amount"
-                  class="h-10 w-11/12 flex-1 rounded-[3px] rounded-l-none border border-l-0 border-neutral-slate-500 px-3 py-2 focus:outline-none"
+                  class="h-10 w-11/12 flex-1 cursor-pointer rounded-[3px] rounded-l-none border border-l-0 border-neutral-slate-500 px-3 py-2 focus:outline-none group-hover:border-neutral-slate-900"
                 />
               </div>
             </div>
@@ -59,15 +59,15 @@
                 <label for="term" class="text-base text-neutral-slate-500"
                   >Mortgage Term</label
                 >
-                <div class="mt-2 flex items-center">
+                <div class="group mt-2 flex items-center">
                   <input
                     type="text"
                     name="term"
                     id="term"
-                    class="h-10 w-11/12 flex-1 rounded-[3px] rounded-r-none border border-r-0 border-neutral-slate-500 px-3 py-2 focus:outline-none"
+                    class="h-10 w-11/12 flex-1 cursor-pointer rounded-[3px] rounded-r-none border border-r-0 border-neutral-slate-500 px-3 py-2 focus:outline-none group-hover:border-neutral-slate-900"
                   />
                   <span
-                    class="rounded-r-[3px] border border-l-0 border-neutral-slate-500 bg-neutral-slate-100 px-4 py-[7.25px] font-bold text-neutral-slate-500"
+                    class="cursor-pointer rounded-r-[3px] border border-l-0 border-neutral-slate-500 bg-neutral-slate-100 px-4 py-[7.25px] font-bold text-neutral-slate-500 group-hover:border-neutral-slate-900"
                     >years</span
                   >
                 </div>
@@ -76,15 +76,15 @@
                 <label for="rate" class="text-base text-neutral-slate-500"
                   >Interest Rate</label
                 >
-                <div class="mt-2 flex items-center">
+                <div class="group mt-2 flex items-center">
                   <input
                     type="text"
                     name="rate"
                     id="rate"
-                    class="h-10 w-11/12 flex-1 rounded-[3px] rounded-r-none border border-r-0 border-neutral-slate-500 px-3 py-2 focus:outline-none"
+                    class="h-10 w-11/12 flex-1 cursor-pointer rounded-[3px] rounded-r-none border border-r-0 border-neutral-slate-500 px-3 py-2 focus:outline-none group-hover:border-neutral-slate-900"
                   />
                   <span
-                    class="rounded-r-[3px] border border-l-0 border-neutral-slate-500 bg-neutral-slate-100 px-4 py-[7.25px] font-bold text-neutral-slate-500"
+                    class="cursor-pointer rounded-r-[3px] border border-l-0 border-neutral-slate-500 bg-neutral-slate-100 px-4 py-[7.25px] font-bold text-neutral-slate-500 group-hover:border-neutral-slate-900"
                     >%</span
                   >
                 </div>
@@ -93,7 +93,7 @@
             <div class="mb-6 sm:mb-8 sm:mt-2">
               <p class="text-base text-neutral-slate-500">Mortgage Type</p>
               <div class="mt-2">
-                <div id="repaymentDiv" class="radio-group">
+                <div id="repaymentDiv" class="radio-group group">
                   <input
                     type="radio"
                     name="mortgage-type"
@@ -103,11 +103,11 @@
                   />
                   <label
                     for="repayment"
-                    class="text-base font-bold text-neutral-slate-900"
+                    class="cursor-pointer text-base font-bold text-neutral-slate-900 group-hover:border-lime"
                     >Repayment</label
                   >
                 </div>
-                <div id="interestDiv" class="radio-group">
+                <div id="interestDiv" class="radio-group group">
                   <input
                     type="radio"
                     name="mortgage-type"
@@ -117,7 +117,7 @@
                   />
                   <label
                     for="interest"
-                    class="text-base font-bold text-neutral-slate-900"
+                    class="cursor-pointer text-base font-bold text-neutral-slate-900 group-hover:border-lime"
                     >Interest Only</label
                   >
                 </div>
@@ -126,7 +126,7 @@
             <div class="sm:mb-2">
               <button
                 type="submit"
-                class="flex w-full items-center justify-center gap-2 rounded-full bg-lime py-3 font-bold text-neutral-slate-900 sm:w-[45%] lg:w-4/6"
+                class="flex w-full items-center justify-center gap-2 rounded-full bg-lime py-3 font-bold text-neutral-slate-900 hover:bg-lime/50 sm:w-[45%] lg:w-4/6"
               >
                 <span class="">
                   <svg
