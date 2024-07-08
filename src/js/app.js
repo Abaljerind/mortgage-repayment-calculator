@@ -1,4 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
+  const clear = document.querySelector("button[type=button]");
+  const formCalculator = document.getElementById("form-calculator");
   const calculate = document.querySelector("button[type=submit]");
   const amountSpan = document.getElementById("amount-span");
   const amount = document.getElementById("amount");
@@ -15,6 +17,31 @@ document.addEventListener("DOMContentLoaded", function () {
   const repayment = document.getElementById("repayment");
   const interest = document.getElementById("interest");
   const typeInvalid = document.getElementById("type-invalid");
+
+  // form event
+  clear.addEventListener("click", function () {
+    formCalculator.reset();
+
+    amountInvalid.classList.add("hidden");
+    amountSpan.classList.remove("invalid-span");
+    amountSpan.classList.add("valid-span");
+    amount.classList.remove("invalid-input");
+    amount.classList.add("valid-input");
+
+    termInvalid.classList.add("hidden");
+    termSpan.classList.remove("invalid-span");
+    termSpan.classList.add("valid-span");
+    term.classList.remove("invalid-input");
+    term.classList.add("valid-input");
+
+    rateInvalid.classList.add("hidden");
+    rateSpan.classList.remove("invalid-span");
+    rateSpan.classList.add("valid-span");
+    rate.classList.remove("invalid-input");
+    rate.classList.add("valid-input");
+
+    typeInvalid.classList.add("hidden");
+  });
 
   //   calculate repayments
   calculate.addEventListener("click", function (e) {
