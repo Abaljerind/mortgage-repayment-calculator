@@ -16,14 +16,16 @@
     <!-- link css -->
     <link rel="stylesheet" href="./src/css/output.css" />
   </head>
-  <body class="sm:bg-sky-100">
+  <body
+    class="sm:m-0 sm:flex sm:h-screen sm:items-center sm:justify-center sm:bg-sky-100"
+  >
     <section
-      class="container grid grid-cols-1 font-jakarta-sans sm:mx-auto sm:my-8 sm:overflow-hidden sm:rounded-3xl sm:bg-white"
+      class="container grid grid-cols-1 font-jakarta-sans sm:mx-auto sm:my-8 sm:w-10/12 sm:overflow-hidden sm:rounded-2xl sm:bg-white lg:my-0 lg:w-8/12 lg:max-w-screen-2xl lg:grid-cols-2 lg:grid-rows-1 lg:shadow-lg"
     >
       <!-- bagian atas / kiri -->
       <main class="px-4 py-6 sm:p-8">
-        <div class="sm:mb-8 sm:flex sm:items-center sm:justify-between">
-          <h1 class="text-xl font-bold text-neutral-slate-900">
+        <div class="mb-6 sm:mb-8 sm:flex sm:items-center sm:justify-between">
+          <h1 class="text-xl font-bold text-neutral-slate-900 lg:text-2xl">
             Mortgage Calculator
           </h1>
           <button
@@ -35,7 +37,7 @@
         </div>
         <div class="">
           <form class="w-full" id="form-calculator">
-            <div class="mb-4">
+            <div class="mb-4 sm:mb-6">
               <label for="amount" class="text-base text-neutral-slate-500"
                 >Mortgage Amount</label
               >
@@ -53,7 +55,7 @@
               </div>
             </div>
             <div class="sm:flex sm:items-center sm:justify-between">
-              <div class="mb-4">
+              <div class="mb-4 sm:w-[48%]">
                 <label for="term" class="text-base text-neutral-slate-500"
                   >Mortgage Term</label
                 >
@@ -70,7 +72,7 @@
                   >
                 </div>
               </div>
-              <div class="mb-4">
+              <div class="mb-4 sm:w-[48%]">
                 <label for="rate" class="text-base text-neutral-slate-500"
                   >Interest Rate</label
                 >
@@ -88,7 +90,7 @@
                 </div>
               </div>
             </div>
-            <div class="mb-6">
+            <div class="mb-6 sm:mb-8 sm:mt-2">
               <p class="text-base text-neutral-slate-500">Mortgage Type</p>
               <div class="mt-2">
                 <div id="repaymentDiv" class="radio-group">
@@ -121,10 +123,10 @@
                 </div>
               </div>
             </div>
-            <div class="">
+            <div class="sm:mb-2">
               <button
                 type="submit"
-                class="flex w-full items-center justify-center gap-2 rounded-full bg-lime py-3 font-bold text-neutral-slate-900 sm:w-2/5"
+                class="flex w-full items-center justify-center gap-2 rounded-full bg-lime py-3 font-bold text-neutral-slate-900 sm:w-[45%] lg:w-4/6"
               >
                 <span class="">
                   <svg
@@ -148,7 +150,9 @@
       <!-- akhir bagian atas / kiri -->
 
       <!-- bagian bawah / kanan -->
-      <aside class="bg-neutral-slate-900 px-4 py-6">
+      <aside
+        class="bg-neutral-slate-900 px-4 py-6 lg:m-0 lg:flex lg:items-center lg:justify-center lg:rounded-bl-[60px]"
+      >
         <div class="mb-1 mt-1">
           <div class="mb-4 flex justify-center">
             <img
@@ -159,7 +163,9 @@
           </div>
           <div class="text-center text-white">
             <h4 class="text-xl font-bold">Results shown here</h4>
-            <p class="mt-4 text-base leading-6 text-neutral-slate-100 sm:px-16">
+            <p
+              class="mt-4 text-base leading-6 text-neutral-slate-300 sm:px-4 lg:px-8 lg:text-sm"
+            >
               Complete the form and click “calculate repayments” to see what
               your monthly repayments would be.
             </p>
