@@ -16,11 +16,13 @@
     <!-- link css -->
     <link rel="stylesheet" href="./src/css/output.css" />
   </head>
-  <body>
-    <section class="container grid grid-cols-1 font-jakarta-sans">
+  <body class="sm:bg-sky-100">
+    <section
+      class="container grid grid-cols-1 font-jakarta-sans sm:mx-auto sm:my-8 sm:overflow-hidden sm:rounded-3xl sm:bg-white"
+    >
       <!-- bagian atas / kiri -->
-      <main class="px-4 py-6">
-        <div class="">
+      <main class="px-4 py-6 sm:p-8">
+        <div class="sm:mb-8 sm:flex sm:items-center sm:justify-between">
           <h1 class="text-xl font-bold text-neutral-slate-900">
             Mortgage Calculator
           </h1>
@@ -50,38 +52,40 @@
                 />
               </div>
             </div>
-            <div class="mb-4">
-              <label for="term" class="text-base text-neutral-slate-500"
-                >Mortgage Term</label
-              >
-              <div class="mt-2 flex items-center">
-                <input
-                  type="text"
-                  name="term"
-                  id="term"
-                  class="h-10 w-11/12 flex-1 rounded-[3px] rounded-r-none border border-r-0 border-neutral-slate-500 px-3 py-2 focus:outline-none"
-                />
-                <span
-                  class="rounded-r-[3px] border border-l-0 border-neutral-slate-500 bg-neutral-slate-100 px-4 py-[7.25px] font-bold text-neutral-slate-500"
-                  >years</span
+            <div class="sm:flex sm:items-center sm:justify-between">
+              <div class="mb-4">
+                <label for="term" class="text-base text-neutral-slate-500"
+                  >Mortgage Term</label
                 >
+                <div class="mt-2 flex items-center">
+                  <input
+                    type="text"
+                    name="term"
+                    id="term"
+                    class="h-10 w-11/12 flex-1 rounded-[3px] rounded-r-none border border-r-0 border-neutral-slate-500 px-3 py-2 focus:outline-none"
+                  />
+                  <span
+                    class="rounded-r-[3px] border border-l-0 border-neutral-slate-500 bg-neutral-slate-100 px-4 py-[7.25px] font-bold text-neutral-slate-500"
+                    >years</span
+                  >
+                </div>
               </div>
-            </div>
-            <div class="mb-4">
-              <label for="rate" class="text-base text-neutral-slate-500"
-                >Interest Rate</label
-              >
-              <div class="mt-2 flex items-center">
-                <input
-                  type="text"
-                  name="rate"
-                  id="rate"
-                  class="h-10 w-11/12 flex-1 rounded-[3px] rounded-r-none border border-r-0 border-neutral-slate-500 px-3 py-2 focus:outline-none"
-                />
-                <span
-                  class="rounded-r-[3px] border border-l-0 border-neutral-slate-500 bg-neutral-slate-100 px-4 py-[7.25px] font-bold text-neutral-slate-500"
-                  >%</span
+              <div class="mb-4">
+                <label for="rate" class="text-base text-neutral-slate-500"
+                  >Interest Rate</label
                 >
+                <div class="mt-2 flex items-center">
+                  <input
+                    type="text"
+                    name="rate"
+                    id="rate"
+                    class="h-10 w-11/12 flex-1 rounded-[3px] rounded-r-none border border-r-0 border-neutral-slate-500 px-3 py-2 focus:outline-none"
+                  />
+                  <span
+                    class="rounded-r-[3px] border border-l-0 border-neutral-slate-500 bg-neutral-slate-100 px-4 py-[7.25px] font-bold text-neutral-slate-500"
+                    >%</span
+                  >
+                </div>
               </div>
             </div>
             <div class="mb-6">
@@ -120,7 +124,7 @@
             <div class="">
               <button
                 type="submit"
-                class="flex w-full items-center justify-center gap-2 rounded-full bg-lime py-3 font-bold text-neutral-slate-900"
+                class="flex w-full items-center justify-center gap-2 rounded-full bg-lime py-3 font-bold text-neutral-slate-900 sm:w-2/5"
               >
                 <span class="">
                   <svg
@@ -155,7 +159,7 @@
           </div>
           <div class="text-center text-white">
             <h4 class="text-xl font-bold">Results shown here</h4>
-            <p class="mt-4 text-base leading-6 text-white">
+            <p class="mt-4 text-base leading-6 text-neutral-slate-100 sm:px-16">
               Complete the form and click “calculate repayments” to see what
               your monthly repayments would be.
             </p>
