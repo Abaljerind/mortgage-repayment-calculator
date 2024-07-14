@@ -180,7 +180,7 @@
       <aside
         class="bg-neutral-slate-900 px-4 py-6 lg:m-0 lg:flex lg:items-center lg:justify-center lg:rounded-bl-[60px]"
       >
-        <div class="mb-1 mt-1">
+        <div class="mb-1 mt-1 hidden">
           <div class="mb-4 flex justify-center">
             <img
               src="./assets/images/illustration-empty.svg"
@@ -196,6 +196,37 @@
               Complete the form and click “calculate repayments” to see what
               your monthly repayments would be.
             </p>
+          </div>
+        </div>
+        <div class="mb-1 mt-1">
+          <div class="mb-4">
+            <h3 class="mb-2 text-xl font-bold text-white">Your results</h3>
+            <p class="text-base text-neutral-slate-300">
+              Your results are shown below based on the information you
+              provided. To adjust the results, edit the form and click
+              “calculate repayments” again.
+            </p>
+          </div>
+          <div
+            class="mt-6 rounded-lg border-t-4 border-lime bg-[#0d1d25]/70 px-4 py-6"
+          >
+            <div class="">
+              <p class="mb-2 text-sm text-neutral-slate-300">
+                Your monthly repayments
+              </p>
+              <p class="text-4xl font-bold text-lime" id="monthly-repayments">
+                &#163;1,797.74
+              </p>
+              <hr class="mt-4 bg-neutral-slate-900" />
+            </div>
+            <div class="">
+              <p class="mb-2 mt-4 text-sm text-neutral-slate-300">
+                Total you'll repay over the term
+              </p>
+              <p class="text-xl font-bold text-white" id="total-repay">
+                &#163;539,322.94
+              </p>
+            </div>
           </div>
         </div>
       </aside>
