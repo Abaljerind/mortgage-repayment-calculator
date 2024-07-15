@@ -1,9 +1,3 @@
-/* 
-TODO::
-? yang belum dikerjain:
-! 2. mobile, tablet & desktop completed
-*/
-
 document.addEventListener("DOMContentLoaded", function () {
   const clear = document.querySelector("button[type=button]");
   const formCalculator = document.getElementById("form-calculator");
@@ -79,6 +73,9 @@ document.addEventListener("DOMContentLoaded", function () {
       amountSpan.classList.add("valid-span");
       amount.classList.remove("invalid-input");
       amount.classList.add("valid-input");
+      // count and display the results
+      zeroResult.classList.add("hidden");
+      results.classList.remove("hidden");
     }
 
     if (term.value.length === 0 || isNaN(term.value)) {
@@ -93,6 +90,9 @@ document.addEventListener("DOMContentLoaded", function () {
       termSpan.classList.add("valid-span");
       term.classList.remove("invalid-input");
       term.classList.add("valid-input");
+      // count and display the results
+      zeroResult.classList.add("hidden");
+      results.classList.remove("hidden");
     }
 
     if (rate.value.length === 0 || isNaN(rate.value)) {
@@ -107,6 +107,9 @@ document.addEventListener("DOMContentLoaded", function () {
       rateSpan.classList.add("valid-span");
       rate.classList.remove("invalid-input");
       rate.classList.add("valid-input");
+      // count and display the results
+      zeroResult.classList.add("hidden");
+      results.classList.remove("hidden");
     }
 
     if (repayment.checked == true || interest.checked == true) {
@@ -114,10 +117,6 @@ document.addEventListener("DOMContentLoaded", function () {
     } else {
       typeInvalid.classList.remove("hidden");
     }
-
-    // count and display the results
-    zeroResult.classList.add("hidden");
-    results.classList.remove("hidden");
 
     const amountCount = parseFloat(
       document.getElementById("amount").value.replace(/,/g, ""),
