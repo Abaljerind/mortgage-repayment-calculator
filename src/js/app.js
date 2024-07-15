@@ -24,6 +24,14 @@ document.addEventListener("DOMContentLoaded", function () {
   const interest = document.getElementById("interest");
   const typeInvalid = document.getElementById("type-invalid");
 
+  // showing results
+  const zeroResult = document.getElementById("zero-result");
+  const results = document.getElementById("results");
+
+  // tag p for result
+  const monthlyRepayments = document.getElementById("monthly-repayments");
+  const totalRepay = document.getElementById("total-repay");
+
   // form event
   clear.addEventListener("click", function () {
     formCalculator.reset();
@@ -47,6 +55,12 @@ document.addEventListener("DOMContentLoaded", function () {
     rate.classList.add("valid-input");
 
     typeInvalid.classList.add("hidden");
+
+    zeroResult.classList.remove("hidden");
+    results.classList.add("hidden");
+
+    // monthlyRepayments.textContent = "£0.00";
+    // totalRepay.textContent = "£0.00";
   });
 
   //   calculate repayments
@@ -100,5 +114,38 @@ document.addEventListener("DOMContentLoaded", function () {
     } else {
       typeInvalid.classList.remove("hidden");
     }
+
+    // count and display the results
+    zeroResult.classList.add("hidden");
+    results.classList.remove("hidden");
+
+    const amountCount = parseFloat(
+      document.getElementById("amount").value.replace(/,/g, ""),
+    );
+    const rateCount =
+      parseFloat(document.getElementById("rate").value) / 100 / 12;
+    const termCount = parseFloat(document.getElementById("term").value) * 12;
+    const mortgageTypeChecked = document.querySelector(
+      'input[name="mortgage-type"]:checked',
+    ).value;
+
+    let monthRepay;
+    if (mortgageTypeChecked === "repayment") {
+      monthRepay =
+        (amountCount * rateCount * Math.pow(1 + rateCount, termCount)) /
+        (Math.pow(1 + rateCount, termCount) - 1);
+    } else {
+      monthRepay = amountCount * rateCount;
+    }
+
+    const yearlyRepayment = monthRepay * 12;
+    const totalRepayment = monthRepay * termCount;
+
+    monthlyRepayments.textContent = "£" + formatNumber(monthRepay.toFixed(2));
+    totalRepay.textContent = "£" + formatNumber(totalRepayment.toFixed(2));
   });
+
+  function formatNumber(number) {
+    return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  }
 });
