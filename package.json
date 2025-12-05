@@ -25,8 +25,8 @@
   },
   "homepage": "https://github.com/Abaljerind/mortgage-repayment-calculator#readme",
   "devDependencies": {
-    "prettier": "^3.3.2",
-    "prettier-plugin-tailwindcss": "^0.6.5",
-    "tailwindcss": "^3.4.4"
+    "prettier": "^3.7.4",
+    "prettier-plugin-tailwindcss": "^0.7.2",
+    "tailwindcss": "^4.1.17"
   }
 }
